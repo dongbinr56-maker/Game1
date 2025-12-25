@@ -20,5 +20,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/maps/
+    - assets/sprites/
+    - assets/ui/
+    - assets/fonts/
+    # Legacy/compat paths (existing stub assets and TMX references)
     - assets/images/tiles/
     - assets/images/sprites/
