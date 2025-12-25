@@ -1,0 +1,24 @@
+name: game1
+description: Pixel art cafe idle game using Flutter, Flame, and Tiled.
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.34.0
+  flame_tiled: ^3.0.9
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/maps/
+    - assets/images/tiles/
+    - assets/images/sprites/
