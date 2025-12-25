@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:flame_tiled/flame_tiled.dart';
@@ -26,6 +28,9 @@ class CafeGame extends FlameGame {
   @override
   Future<void> onLoad() async {
     await super.onLoad();
+
+    // Ensure pixel art stays crisp (Nearest Neighbor).
+    images.setFilterQuality(FilterQuality.none);
 
     final world = World();
     this.world = world;
